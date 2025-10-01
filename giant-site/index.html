@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Abubakirova Asila | Full Stack Developer</title>
+  <link rel="icon" href="/giant-site/assets/img/message-code.png" type="image/png">
+  <meta name="description" content="Abubakirova Asila: animatsiyala, video, yashil tema." />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/giant-site/assets/css/base.css" />
+</head>
+<body>
+  
+  <style>
+.contact-section {
+  padding: 50px 20px;
+  background-color: #0d1f1e; 
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-form-wrapper {
+  flex: 2;
+}
+
+.contact-info-wrapper {
+  flex: 1;
+}
+
+.contact-form .form-field {
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: 1px solid #00ffaa;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-hint {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.btn.primary {
+  padding: 10px 20px;
+  background-color: #00aa66;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn.primary:hover {
+  background-color: #008855;
+}
+
+.contact-info-wrapper h3 {
+  margin-bottom: 20px;
+}
+
+.contact-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: border 0.3s, background-color 0.3s;
+}
+
+.contact-block:hover {
+  border: 1px solid #00ffaa;
+  background-color: #132826;
+}
+
+.contact-block img {
+  width: 24px;
+  height: 24px;
+}
+
+.contact-block span {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+}
+.contact-block img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) saturate(100%) invert(56%) sepia(98%) saturate(449%) hue-rotate(75deg) brightness(98%) contrast(92%);
+  transition: transform 0.3s;
+}
+
+.contact-block:hover img {
+  transform: scale(1.1);
+}
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1); 
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.social-links a:hover img {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(98%) saturate(449%) hue-rotate(75deg) brightness(98%) contrast(92%);
+  transform: scale(1.2);
+}
+
+.btn-contact:hover  {
+  background: rgba(19, 228, 92, 0.384);
+}
+
+  </style>
+
+ <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        ☘️ Abubakirova <span class="accent">Asila ☘️</span>
+      </a>
+  
+      <button class="nav-toggle" aria-label="Menyu" aria-expanded="false">
+        ☰
+      </button>
+  
+      <nav class="site-nav" aria-label="Asosiy navigatsiya">
+        <ul class="nav-list">
+          <li><a href="#hero">☘️ Bosh</a></li>
+          <li><a href="#about">☘️ About</a></li>
+          <li><a href="#services">☘️ Xizmatlar</a></li>
+          <li><a href="#projects">☘️ Loyihalar</a></li>
+          <li><a href="#extra-data">☘️ Detail</a></li>
+          <li><a href="#contact">☘️ Aloqa</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> 
+  
+  <main>
+    <section id="hero" class="section hero" data-aos="fade-up">
+      <div class="hero-media">
+        <video class="hero-video" src="https://media.istockphoto.com/id/961419370/video/exploding-tea-leafs-in-4k.mp4?s=mp4-640x640-is&k=20&c=nLS9G86DhhTrRGXh4xfLq5HDs1-2OKLgmM-nAV8S8Wo=" autoplay muted loop playsinline></video>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-inner" data-aos="fade-up">
+        <div class="hero-text animate-in">
+          <h1 style="color: white; background: linear-gradient(to right, #54e159, #54e1c0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Gigant portfolio: <span class="accent" style="background: linear-gradient(to right, #54e159, #54e1c0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">animatsiya</span>, <span class="accent" style="background: linear-gradient(to right, #54e159, #54e1c0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">interaktiv</span>, <span class="accent" style="background: linear-gradient(to right, #54e159, #54e1c0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">tezlik</span></h1>
+          <a class="logo" href="#" style="color: white;  background: linear-gradient(to right, #54e159, #54e1c0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Full Stack | <span class="accent" style="color: white;"> Developer</span></a>
+          <p style="color: white;">Tezkor, kuchli va chiroyli veb tajriba. Yashil rang palitrasi, smooth transition va transformlar bilan boyitilgan.</p>
+          <div class="hero-cta">
+            <a class="btn primary glow" href="#projects">Loyihalarni ko'rish</a>
+            <a class="btn ghost btn-contact" href="#contact" style="color: white; border: 2px solid green; border-radius: 10px; height: 45px; width: 140px; justify-content: center; align-items: center; ">Bog'lanish</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="title">About</h2>
+        <p class="subtitle">Men haqimda qisqacha va statistikalar</p>
+    
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="badge">Loyihalar</div>
+            <div class="stat" data-countto="20">0</div>
+          </div>
+    
+          <div class="stat-box">
+            <div class="badge">Mijozlar</div>
+            <div class="stat" data-countto="10">0</div>
+          </div>
+    
+          <div class="stat-box">
+            <div class="badge">Yil</div>
+            <div class="stat" data-countto="1">1</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="services" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Xizmatlar</h2>
+        <p class="section-subtitle">Dizayn, Frontend, Integratsiya, Optimallashtirish</p>
+        <div class="feature-row animate-in">
+          <div class="feature-content"><h3>Dizayn tizimi</h3><p>UI kit, grid, tipografiya, ranglar.</p><div class="cluster"><span class="badge">Figma</span><span class="badge">Design Tokens</span></div></div>
+          <div class="feature-media"><img src="https://s3-alpha.figma.com/hub/file/3630796541/resized/1200x720/b8c6b809-f29f-4c29-a0ee-081652e5c24d-cover.png" alt="Design"/></div>
+        </div>
+        <div class="spacer-md"></div>
+        <div class="feature-row alt animate-in">
+          <div class="feature-media"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200" alt="Frontend"/></div>
+          <div class="feature-content"><h3>Frontend</h3><p>SPA, SSR, animatsiya, accessibility.</p><div class="cluster"><span class="badge">HTML</span><span class="badge">CSS</span><span class="badge">JS</span></div></div>
+        </div>
+        <div class="spacer-md"></div>
+        <div class="feature-row animate-in">
+          <div class="feature-content"><h3>Integratsiya</h3><p>API, auth, to'lovlar, CMS.</p><div class="cluster"><span class="badge">REST</span><span class="badge">OAuth</span></div></div>
+          <div class="feature-media"><img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?w=1200" alt="Integratsiya"/></div>
+        </div>
+        <div class="spacer-md"></div>
+        <div class="feature-row alt animate-in">
+          <div class="feature-media"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200" alt="Optimallashtirish"/></div>
+          <div class="feature-content"><h3>Optimallashtirish</h3><p>Lazyload, caching, SEO.</p><div class="cluster"><span class="badge">LCP</span><span class="badge">CLS</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-title">Loyihalar</h2>
+        <div class="grid projects-grid">
+          <article class="card project animate-in"><img src="/giant-site/assets/img/ecoshop.png" alt="Project 1"><div class="card-body"><h3 style="
+            font-weight: bold;
+            background: linear-gradient(90deg, #54e159, #0dd5ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+          ">Eco Shop</h3><div class="card-actions"><a class="btn small" href="#">Batafsil</a></div></div></article>
+          <article class="card project animate-in"><img src="/giant-site/assets/img/5d07affc3a966.jpeg" alt="Project 2"><div class="card-body"><h3 style="
+            font-weight: bold;
+            background: linear-gradient(90deg, #54e159, #0dd5ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;">Food Lover</h3><div class="card-actions"><a class="btn small" href="#">Batafsil</a></div></div></article>
+          <article class="card project animate-in"><img src="/giant-site/assets/img/beauty_cosmetic_ingredients_inhaltsstoffe_zutaten_01_clean.jpg" alt="Project 3"><div class="card-body"><h3 style="
+            font-weight: bold;
+            background: linear-gradient(90deg, #54e159, #0dd5ef);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;">Fashion Shop</h3><div class="card-actions"><a class="btn small" href="#">Batafsil</a></div></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="extra-data" class="section" data-aos="fade-up">
+        <div class="container">
+          <h2 class="section-title">Detail</h2>
+          <p class="section-subtitle">Texnologiyalar to'plami</p>
+          
+          <div class="tech-grid">
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"/>
+              <span>HTML</span>
+              <p>Veb sahifani tuzish</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"/>
+              <span>CSS</span>
+              <p>Veb sahifani bezash</p>
+            </div>
+         <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"/>
+              <span>JavaScript</span>
+              <p>Interaktivlik qo'shish</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>
+              <span>Git</span>
+              <p>Kodni boshqarish</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
+              <span>GitHub</span>
+              <p>Kodni saqlash</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"/>
+              <span>Figma</span>
+              <p>Dizayn yaratish</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node"/>
+              <span>Node.js</span>
+              <p>Backend yozish</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="NPM"/>
+              <span>NPM</span>
+              <p>Paketlarni boshqarish</p>
+            </div>
+      
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/>
+              <span>React</span>
+              <p>UI kutubxonasi</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue"/>
+              <span>Vue</span>
+              <p>Frontend freymvork</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="Sass"/>
+              <span>Sass</span>
+              <p>CSS preprocessori</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="Tailwind"/>
+              <span>Tailwind</span>
+              <p>Utility CSS</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TS"/>
+              <span>TypeScript</span>
+              <p>Kengaytirilgan JS</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt="Webpack"/>
+              <span>Webpack</span>
+              <p>Modullarni yig'ish</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg" alt="Vite"/>
+              <span>Vite</span>
+              <p>Tezkor bundler</p>
+            </div>
+            <div class="tech-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"/>
+              <span>Docker</span>
+              <p>Konteynerlash</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    <section id="contact" class="contact-section" data-aos="fade-up">
+  <div class="container">
+    <div class="contact-wrapper">
+
+      <div class="contact-form-wrapper">
+        <h2 class="section-title">Aloqa</h2>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="name">Ism</label>
+            <input id="name" name="name" type="text" required placeholder="Ismingiz">
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="email@example.com">
+          </div>
+          <div class="form-field">
+            <label for="message">Xabar</label>
+            <textarea id="message" name="message" rows="6" required placeholder="Xabaringiz"></textarea>
+          </div>
+          <div class="form-hint">Forma validatsiya va UX ko'rsatkichlari bilan.</div>
+          <button class="btn primary" type="submit">Yuborish</button>
+          <div id="formStatus" class="form-hint" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+
+      <div class="contact-info-wrapper">
+        <h3>Kontakt ma'lumotlari</h3>
+
+        <div class="contact-block">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Email">
+          <span>asila16112000@gmail.com</span>
+        </div>
+
+        <div class="contact-block">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telefon">
+          <span>+998 91 243 37 35</span>
+        </div>
+
+        <div class="contact-block">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlemaps.svg" alt="Manzil">
+          <span>O'zbekiston respublikasi Buxoro viloyati</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+      </section>
+
+  </main>
+
+  <footer class="site-footer" style="background:#0d0d0d; color:white; padding:60px 0;" data-aos="fade-up">
+
+    <div class="container" style="display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:40px;">
+  
+      <div>
+        <h3 style="color: white;  background: linear-gradient(to right, #54e159, #54e1c0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Abubakirova Asila</h3>
+        <p style="opacity:0.8; line-height:1.6;">
+          Gigant portfolio sayti - animatsiya, interaktiv tajriba va yashil tema asosida yaratilgan. Ushbu sayt foydalanuvchilarga tez va qulay aloqa o'rnatish imkoniyatini beradi. 
+        </p>
+      </div>
+  
+      <div>
+        <h4 style="margin-bottom: 15px; color: white;  background: linear-gradient(to right, #54e159, #54e1c0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Foydali havolalar</h4>
+        <ul style="list-style:none; padding:0; line-height:2;">
+          <li><a href="#hero" style="color:white; text-decoration:none;">Bosh sahifa</a></li>
+          <li><a href="#about" style="color:white; text-decoration:none;">About</a></li>
+          <li><a href="#services" style="color:white; text-decoration:none;">Xizmatlar</a></li>
+          <li><a href="#projects" style="color:white; text-decoration:none;">Loyihalar</a></li>
+          <li><a href="#contact" style="color:white; text-decoration:none;">Aloqa</a></li>
+        </ul>
+      </div>
+  
+      <div>
+
+        <h4 style="margin-bottom: 15px; color: white;  background: linear-gradient(to right, #54e159, #54e1c0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Aloqa</h4>
+        <p>Toshkent, O'zbekiston</p>
+        <p>Email: asila16112000@gmail.com</p>
+        <p>Telefon: +998 91 243 37 35</p>
+      </div>
+<div>
+  <h4 style="margin-bottom: 15px; color: white;  background: linear-gradient(to right, #54e159, #54e1c0); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Ijtimoiy tarmoqlar</h4>
+  <div class="social-links">
+    <a href="https://t.me/username" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
+    </a>
+    <a href="https://www.facebook.com/username" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/username" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+    </a>
+    <a href="https://github.com/username" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub">
+    </a>
+  </div>
+</div>
+
+    </div>
+    
+    <div class="footer-bottom" style="text-align:center; margin-top:50px; opacity:0.7;">
+      <hr class="footer-line" style="border:none; border-top:2px solid #333; width:100%; margin-bottom:15px;">
+      <p class="footer-text" style="margin:0; font-size:14px;">
+        © <span id="year"></span> Asila Abubakirova.Barcha huquqlar himoyalangan.2025-yil
+      </p>
+    </div>
+  
+  </footer>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, 
+    once: true,     
+  })
+</script>
+  <script src="/giant-site/assets/js/script.js"></script>
+</body>
+</html>
